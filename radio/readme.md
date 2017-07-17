@@ -1,19 +1,19 @@
 # 1.原生js文件导出实例化方法（可传参）
-	export function CFCMWin(param) {
-		return new CFCMWin(param)
+	export function CFCMRadio(param) {
+		return new CFCMRadio(param)
 	}
-# 2.npm包index文件接收CFCMWin参数，并把该参数添加到vue原型对象里面
-	import {CFCMWin} from './src/Plugins_es6_win.babel.min.js'
+# 2.npm包index文件接收CFCMRadio参数，并把该参数添加到vue原型对象里面
+	import {CFCMRadio} from './src/Plugins_es6_radio.babel.min.js'
 	export default {
 	 	install: function(Vue) {
- 		 Object.defineProperty(Vue.prototype, '$Win', { value: CFCMWin });
+ 		 Object.defineProperty(Vue.prototype, '$Radio', { value: CFCMRadio });
 	  }
 	}
-# 3.发布npm包（eg:CFCMWin）
-# 4.npm安装CFCMWin
-# 5.在路由中引入CFCMWin,并使用vue.use()安装js插件（安装 Vue.js 插件。如果插件是一个对象，必须提供 install 方法。如果插件是一个函数，它会被作为 install 方法。install 方法将被作为 Vue 的参数调用。）
-	import CFCMWin from 'cfcwin'
-	Vue.use(CFCMWin)
+# 3.发布npm包（eg:CFCMRadio）
+# 4.npm安装CFCMRadio
+# 5.在路由中引入CFCMRadio,并使用vue.use()安装js插件（安装 Vue.js 插件。如果插件是一个对象，必须提供 install 方法。如果插件是一个函数，它会被作为 install 方法。install 方法将被作为 Vue 的参数调用。）
+	import CFCMRadio from 'cfcradio'
+	Vue.use(CFCMRadio)
 # 6.定义scroll.vue文件如下（需要注意的是，使用方法一定要放到mounted方法里面）
 	
 	<script type="text/javascript">
@@ -25,7 +25,7 @@
 	    }
 	  },
 	  mounted: function () {
-	    console.log(this.$Win())
+	    console.log(this.$Radio())
 	  }
 	}
 	</script>
