@@ -1,0 +1,256 @@
+@charset "UTF-8";
+.win {
+  animation: winanimation 0.5s ease-in-out 0s;
+  background: rgba(55, 55, 55, 0.6);
+  opacity: 0;
+  float: left;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 10000;
+}
+.win .win_content {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 2px 1px #979797;
+  bottom: 0;
+  float: left;
+  height: 185px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 287px;
+}
+.win .title {
+  background: #fff;
+  border-bottom: 1px solid #979797;
+  border-radius: 10px 10px 0 0;
+  cursor: default;
+  float: left;
+  height: 40px;
+  position: relative;
+  width: 100%;
+}
+.win .title .menuname::selection {
+  background: none;
+}
+.win .title .menuname {
+  float: left;
+  height: 40px;
+  line-height: 40px;
+  text-indent: 12px;
+  width: auto;
+}
+.win .title .filename {
+  color: #6c6c6c;
+  font-size: 13px;
+  float: left;
+  height: 40px;
+  line-height: 40px;
+  width: auto;
+}
+.win .winclose {
+  cursor: pointer;
+  float: right;
+  height: 40px;
+  line-height: 40px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50px;
+}
+.win .input {
+  border: 1px solid #979797;
+  color: #6c6c6c;
+  float: left;
+  height: 31px;
+  margin: 25px 0 34px 25px;
+  text-indent: 8px;
+  width: 237px;
+}
+.win .txt {
+  float: left;
+  padding: 15px;
+  width: auto;
+}
+.win .content {
+  float: left;
+}
+.win .btnline {
+  border-top: 1px solid #979797;
+  bottom: 10px;
+  float: left;
+  left: 0;
+  padding: 8px 0 0 0;
+  position: absolute;
+  width: 100%;
+}
+.win .cancel, .win .save {
+  background: #fff;
+  color: #979797;
+  cursor: pointer;
+  float: left;
+  height: 35px;
+  line-height: 35px;
+  margin-left: 45px;
+  text-align: center;
+  width: 60px;
+}
+.win .save {
+  border-radius: 5px;
+  background: #008dcf;
+  color: #fff;
+  margin-left: 25px;
+}
+.win .line {
+  float: left;
+  height: 33px;
+  margin-top: 20px;
+  width: 100%;
+}
+.win .text {
+  float: left;
+  height: 33px;
+  line-height: 33px;
+  margin-right: 20px;
+  padding: 0;
+  text-align: right;
+  width: 64px;
+}
+
+.tips {
+  animation: winanimation 0.5s ease-in-out 0s;
+  background: #fff;
+  box-shadow: 0 0 0 1px #6c6c6c;
+  border-radius: 5px;
+  padding: 5px;
+  text-align: center;
+}
+
+.tipsright:before {
+  background: #fff;
+  border-style: solid;
+  border-color: transparent transparent #6c6c6c #6c6c6c;
+  border-width: 1px;
+  content: "";
+  height: 10px;
+  left: -7px;
+  position: absolute;
+  transform: rotate(45deg) skew(-10deg, -10deg);
+  top: 15px;
+  width: 10px;
+}
+
+.tipsleft:before {
+  background: #fff;
+  border-style: solid;
+  border-color: #6c6c6c #6c6c6c transparent transparent;
+  border-width: 1px;
+  content: "";
+  height: 10px;
+  right: -6px;
+  position: absolute;
+  transform: rotate(45deg) skew(-10deg, -10deg);
+  top: 5px;
+  width: 10px;
+}
+
+.tipsbottom:before {
+  background: #fff;
+  border-style: solid;
+  border-color: #6c6c6c #6c6c6c transparent transparent;
+  border-width: 1px;
+  content: "";
+  height: 10px;
+  right: 45%;
+  position: absolute;
+  transform: rotate(-45deg) skew(-10deg, -10deg);
+  top: -6px;
+  width: 10px;
+}
+
+.tipstop:before {
+  background: #fff;
+  bottom: -6px;
+  border-style: solid;
+  border-color: transparent transparent #6c6c6c #6c6c6c;
+  border-width: 1px;
+  content: "";
+  height: 10px;
+  right: 10px;
+  position: absolute;
+  transform: rotate(-45deg) skew(-10deg, -10deg);
+  width: 10px;
+}
+
+.winselect {
+  display: none;
+}
+
+@-webkit-keyframes winanimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-moz-keyframes winanimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-ms-keyframes winanimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes winanimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes reversewinanimation {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@-moz-keyframes reversewinanimation {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@-ms-keyframes reversewinanimation {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes reversewinanimation {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
