@@ -1,0 +1,62 @@
+@charset "UTF-8";
+/*模拟单选*/
+.radio, .radioed {
+  cursor: pointer;
+  float: left;
+  height: 15px;
+  line-height: 15px;
+  margin-top: 12px;
+  margin-right: 5px;
+  width: auto;
+}
+
+.lists {
+  float: left;
+  width: 100%;
+}
+
+.radio div, .radioed div {
+  float: left;
+}
+
+.radio .icon {
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  height: 13px;
+  margin-right: 3px;
+  width: 13px;
+}
+
+.radio .icon:before {
+  background: #fff;
+  border-radius: 50%;
+  content: "";
+  left: 2px;
+  height: 9px;
+  position: absolute;
+  width: 9px;
+  top: 2px;
+}
+
+.radioed .icon {
+  border: 1px solid #2d8cf0;
+  border-radius: 50%;
+  height: 13px;
+  margin-right: 3px;
+  position: relative;
+  width: 13px;
+}
+
+.radioed .icon:before {
+  background: #2d8cf0;
+  border-radius: 50%;
+  content: "";
+  left: 2px;
+  height: 9px;
+  position: absolute;
+  width: 9px;
+  transition: all 0.5s ease-in-out;
+  top: 2px;
+}
+
+/*# sourceMappingURL=radio.css.map */
